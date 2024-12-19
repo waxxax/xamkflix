@@ -1,0 +1,43 @@
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lisää omat tyylit */
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Pääfontti */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  /* Otsikoiden fontti */
+}
+
+/* Vaalea teema (oletus) */
+.bg-primary {
+  @apply bg-blue-500;
+}
+
+.text-primary {
+  @apply text-gray-900;
+}
+
+/* Tumma teema */
+.dark .bg-primary {
+  @apply bg-gray-900;
+}
+
+.dark .text-primary {
+  @apply text-white;
+}
+
+.dark .bg-secondary {
+  @apply bg-gray-700;
+}
